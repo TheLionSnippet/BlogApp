@@ -1,13 +1,169 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Tektur&display=swap');
+*{
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: crimson;
+}
+body{
+  background-image:url(https://wallpaperaccess.com/full/1108546.jpg);
+  background-size: cover;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.content{
+  margin: 40px auto;
+}
+
+.navbar{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: left;
+}
+
+.navbar h1{
+  background-color: black;
+  color: crimson;
+  border: 3px solid white;
+  padding: 5px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.links a{
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  
+}
+
+.links{
+  margin-left: 70px;
+  border: 3px solid white;
+}
+.links a:hover{
+  color: crimson;
+  background-color: white;
+  padding: 2px 2px;
+}
+
+.blog-preview{
+  max-width: 350px;
+  color: aliceblue;
+  background-color: brown;
+  padding: 10px;
+  border-bottom: 7px solid white;
+  margin-bottom: auto;
+  
+}
+.blogAuthor{
+  color: aliceblue;
+}
+.blog-preview:hover{
+  cursor: pointer;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.blog-heading{
+  color: white;
+  margin-left: 70px;
+  border: 3px dashed coral ;
+  max-width: 150px;
+  padding: 4px;
+}
+
+.delete-btn:hover{
+  background-color: rgb(240, 6, 6);
+  color: white;
+  transition: ease-in 0.2ms;
+  transform: scale(70%);
+}
+.blog-title{
+  font-family: 'Tektur', cursive;
+}
+.blog-list{
+  margin-left: 30px;
+}
+.blog-preview a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.blog-details{
+  margin-top: 100px;
+  margin-left: 200px;
+  border: 5px groove white;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.create{
+  display:block;
+  max-width: 250px;
+  margin-left: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.form-details textarea{
+  background-color: transparent;
+  border: 2px solid white;
+  margin-bottom: 20px;
+}
+.form-details input{
+  background-color: transparent;
+  border: 2px solid white;
+  margin-bottom: 20px;
+}
+
+.blog-author{
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+select{
+  background-color: transparent!important ;
+  border: 2px solid white;
+  padding: 2px;
+}
+option{
+  background-color: black;
+}
+.add-blog{
+  background-color: transparent;
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+.add-blog:hover{
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.new-preview{
+  margin-top: 7px;
+  padding: 4px;
+  border: 2px solid white;
+  border-radius: 7px;
+}
+.preview-title, .preview-body, .preview-author{
+  margin-left: 50px;
+}
+.delete-btn{
+  width: fit-content;
+  margin-top: 50px;
+ height: 30px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ background: red;
+ border: none;
+ border-radius: 5px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ background: #e62222;
+ color: white !important;
+}
+.not-found {
+  color: crimson;
+}
+.link{
+  color: crimson
 }
